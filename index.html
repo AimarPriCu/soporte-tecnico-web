@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AimarTech - Soporte técnico a domicilio</title>
+  <meta name="description" content="Soporte técnico a domicilio, remoto y en taller. Diagnósticos, formateos, limpieza, redes y más. Atención rápida y segura."/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fcfaf7;
+      --card:#d0e9ee;
+      --accent:#0b63d6;
+      --muted:#030303;
+      --radius:14px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background:var(--bg);
+      color:#041438;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:20px;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      margin-bottom:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#d4950b);
+      display:flex;align-items:center;justify-content:center;color:rgb(176, 175, 212);font-weight:700;
+      font-size:20px;box-shadow:0 6px 18px rgba(4, 47, 95, 0.18);
+    }
+    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:500}
+    .hero{
+      background:linear-gradient(180deg, rgba(75, 165, 224, 0.699), transparent);
+      padding:28px;border-radius:var(--radius);
+      display:flex;gap:24px;align-items:center;flex-wrap:wrap;
+    }
+    .hero-left{flex:1;min-width:260px}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{color:var(--muted);margin:12px 0 20px}
+    .cta{
+      display:flex;gap:12px;flex-wrap:wrap;
+    }
+    .btn{
+      background:var(--accent);color:white;padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600;
+      text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+    }
+    .btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(11,99,214,0.12)}
+    .hero-right{
+      width:320px;min-width:220px;
+    }
+    .card{
+      background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);
+    }
+    .services{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px;
+    }
+    .service-item{padding:18px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#acc2d8);border:1px solid rgba(11,99,214,0.04)}
+    .service-item h4{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+    .section{margin-top:26px}
+    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    @media (max-width:880px){.grid-2{grid-template-columns:1fr} .hero-right{width:100%}}
+    .contact-row{display:flex;gap:10px;align-items:center}
+    input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #fbeae6;background:white;font-size:14px}
+    textarea{min-height:110px;resize:vertical}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding:12px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(11,99,214,0.08);font-weight:600;color:var(--accent)}
+    .testimon{display:flex;flex-direction:column;gap:12px}
+    .review{background:#f8fbff;padding:12px;border-radius:10px}
+    .small{font-size:13px;color:var(--muted)}
+    .price{font-size:18px;font-weight:700;color:#0b63d6}
+    .whatsapp{
+      display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:#25D366;color:white;text-decoration:none;font-weight:700;
+    }
+    /* simple footer links */
+    .topline{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
+  </style>
+</head>
+
+<body>
+    
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">AT</div>
+        <div>
+          <div style="font-weight:700">AimarTech</div>
+          <div class="small" style="margin-top:3px">Soporte técnico a domicilio • remoto • taller</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+    
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <span class="badge">Soporte rápido • confianza local</span>
+          <h1>Tu técnico de confianza — servicio a domicilio y remoto</h1>
+          <p>Formateos, reparaciones, limpieza, redes y soporte remoto. Atención personal, precios claros.</p>
+          <div class="cta">
+            <a class="btn" href="#contacto" id="reservaBtn">Contactanos y reserva a tu hora disponible</a>
+            <a class="btn ghost" href="#servicios">Ver servicios</a>
+          </div>
+
+          <div class="section">
+            <h3>Por qué elegir AimarTech</h3>
+            <ul class="muted">
+              <li>Visita a domicilio a disponiblidad de horario (según zona).</li>
+              <li>Soporte remoto seguro por acceso controlado.</li>
+              <li>Garantía en servicio: instalaciones y configuraciones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-right card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="small">Contacto</div> 
+              <div style="font-weight:700">+51 983011758</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Email</div> 
+              <div style="font-weight:700">aimarprieto.54</div>
+            </div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid #eef6ff">
+
+          <div>
+            <div class="small">Servicios rápidos</div>
+            <div class="services" style="margin-top:12px">
+              <div class="service-item">
+                <h4>Diagnóstico remoto</h4>
+                <div class="price">S/ 20</div>
+                <div class="muted">Revisión por conexión y recomendaciones.</div>
+              </div>
+              <div class="service-item">
+                <h4>Visita a domicilio</h4>
+                <div class="price">Desde S/ 35</div>
+                <div class="muted">Incluye diagnóstico y solución básica.</div>
+              </div>
+              <div class="service-item">
+                <h4>Formateo + SO</h4>
+                <div class="price">Desde S/ 40</div>
+                <div class="muted">Instalación Windows 10-11 y drivers.</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="whatsapp" href="https://wa.me/51983011758" target="_blank">WhatsApp</a>
+            <a class="btn ghost" href="#contacto">Enviar mensaje</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <div class="grid-2" style="margin-top:12px">
+          <div>
+            <div class="card">
+              <h3>Soporte a domicilio</h3>
+              <p class="muted">Atención en tu hogar , instalación de hardware, limpieza física y configuración.</p>
+              <ul class="muted" style="margin-top:10px">
+                <li>Instalación de redes y routers.</li>
+                <li>Diagnóstico y reparación de hardware.</li>
+                <li>Recuperación de datos (evaluación previa).</li>
+              </ul>
+              <hr style="margin:12px 0;border:none;border-top:1px solid #fffcee">
+              <h4>Soporte remoto</h4>
+              <p class="muted">Asesorías rápidas por videollamada o conexión remota: solución de software, limpiezas y configuraciones.</p>
+              <h4 style="margin-top:12px">Domicilio / entrega</h4>
+              <p class="muted">Si prefieres, trae tu equipo al taller/casa para reparaciones más profundas.</p>
+            </div>
+
+            <div class="card" style="margin-top:14px;padding:16px">
+              <h3>Testimonios</h3>
+              <div class="testimon">
+                <div class="review">
+                  <div style="font-weight:700">María G.</div>
+                  <div class="small">"Muy rápido y buen servicio. Reparó mi laptop en el día."</div>
+                </div>
+                <div class="review">
+                  <div style="font-weight:700">Carlos R.</div>
+                  <div class="small">"Atención remota excelente"</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card">
+              <h3>Reserva rápida</h3>
+              <p class="muted">Rellena el formulario y te contacto para confirmar fecha y hora.</p>
+              <form id="contactForm">
+                <label class="small" style="display:block;margin-top:8px">Nombre</label>
+                <input id="name" type="text" placeholder="Tu nombre" required />
+                <label class="small" style="display:block;margin-top:8px">Teléfono / WhatsApp</label>
+                <input id="phone" type="text" placeholder="+51 983011758" required />
+                <label class="small" style="display:block;margin-top:8px">Servicio</label>
+                <select id="service" style="padding:10px;border-radius:10px;margin-top:6px">
+                  <option value="diagnostico">Diagnóstico remoto</option>
+                  <option value="domicilio">Visita a domicilio</option>
+                  <option value="formateo">Formateo / instalación</option>
+                </select>
+                <label class="small" style="display:block;margin-top:8px">Mensaje (opcional)</label>
+                <textarea id="message" placeholder="Describe el problema o ubicación"></textarea>
+                <div style="margin-top:10px;display:flex;gap:8px">
+                  <button type="submit" class="btn">Enviar reserva</button>
+                  <a class="btn ghost" id="whBtn" href="https://wa.me/51983011758" target="_blank">WhatsApp</a>
+                </div>
+                <div id="formMsg" style="margin-top:8px" class="small muted"></div>
+              </form>
+            </div>
+
+            <div class="card" style="margin-top:12px;text-align:center">
+              <h4>Área de cobertura</h4>
+              <p class="muted small">Arequipa(zonas: miraflores y distritos aledaños)</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Sobre mí</h2>
+        <div class="card" style="margin-top:10px">
+          <p class="muted">Hola, soy Aimar — técnico especializado en mantenimiento, reparaciones y redes. Cuento con experiencia en soporte para particulares y pequeñas empresas. Me enfoco en soluciones rápidas y comunicativas, explicando lo realizado y dando recomendaciones para evitar futuros problemas.</p>
+          <ul class="muted" style="margin-top:10px">
+            <li>Experiencia con Windows y hardware PC</li>
+            <li>Soporte remoto seguro y tutorías</li>
+            <li>Garantía corta en instalaciones</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <div class="card" style="margin-top:10px">
+          <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center">
+            <div style="flex:1;min-width:220px">
+              <p class="muted">Teléfono / WhatsApp: <strong>+51 983011758</strong></p>
+              <p class="muted">Email: <strong>aimarprieto.54@gmail.com</strong></p>
+              <p class="muted">Horario: Lun - Sab, horarios flexible </p>
+              <div style="margin-top:8px">
+                <a class="whatsapp" href="https://wa.me/51983011758" target="_blank">Contactar por WhatsApp</a>
+              </div>
+            </div>
+            <div style="flex:1;min-width:220px">
+              <form id="contactForm2">
+                <label class="small">Nombre</label>
+                <input id="cname" type="text" required />
+                <label class="small" style="margin-top:8px">Email o WhatsApp</label>
+                <input id="cemail" type="text" required />
+                <label class="small" style="margin-top:8px">Mensaje</label>
+                <textarea id="cmessage" required></textarea>
+                <div style="margin-top:8px"><button type="submit" class="btn">Enviar mensaje</button></div>
+                <div id="cformMsg" class="small muted" style="margin-top:8px"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<section class="ubicacion">
+  <h2>Ubicación</h2>
+  <p>Ubicanos calle cajamarca 300 Miflores-Arequipa, atendemos remotamente a toda Arequipa.</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!4v1761359286808!6m8!1m7!1sZP-z1blX1jYwMuGDNtNWIw!2m2!1d-16.3764420947251!2d-71.50688731840918!3f227.0844929908711!4f-7.962506025225196!5f0.7820865974627469" 
+    width="1100" height="450" style="border:0;" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    
+  </iframe>
+</section>
+
+
+    <footer>
+      © <span id="year"></span> AimarTech — Soporte técnico a domicilio-remoto <span class="small"></span>
+    </footer>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form handlers (demo: no backend)
+    function fakeSend(formId, msgEl) {
+      const msg = document.getElementById(msgEl);
+      msg.textContent = 'Enviando...';
+      setTimeout(()=>{ msg.textContent = 'Gracias — tu solicitud fue enviada. Te contactaré por WhatsApp o email.'; }, 900);
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if(!name || !phone){ document.getElementById('formMsg').textContent = 'Completa nombre y teléfono.'; return; }
+      // build whatsapp prefilled message
+      const service = document.getElementById('service').value;
+      const msg = encodeURIComponent(`Hola, soy ${name}. Solicito: ${service}. Tel: ${phone}. ${document.getElementById('message').value || ''}`);
+      // Replace number below with your WhatsApp business number
+      const wa = '51983011758';
+      window.open('https://wa.me/'+wa+'?text='+msg, '_blank');
+      document.getElementById('formMsg').textContent = 'Abriendo WhatsApp...';
+    });
+
+    document.getElementById('contactForm2').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('cname').value.trim();
+      const contact = document.getElementById('cemail').value.trim();
+      const text = document.getElementById('cmessage').value.trim();
+      if(!name || !contact || !text) { document.getElementById('cformMsg').textContent = 'Completa todos los campos.'; return; }
+      fakeSend('contactForm2','cformMsg');
+    });
+
+    // Scroll to contact when clicking reserve
+    document.getElementById('reservaBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      document.getElementById('contacto').scrollIntoView({behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
